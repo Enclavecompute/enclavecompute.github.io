@@ -80,22 +80,23 @@ import Base from '../layouts/Base.astro';
       </div>
     </div>
 
-    <div class="arch-diagram">
-┌─────────── Your Office ──────────────┐
-│                                      │
-│   Staff Devices (laptop / tablet)    │
-│       └─ Browser-based interface     │
-│                  │                   │
-│          office Wi-Fi (LAN only)     │
-│                  │                   │
-│   ┌──────────────▼──────────────┐    │
-│   │     Local AI Appliance      │    │
-│   │  Models + Transcription +   │    │
-│   │  Vector Store + Encryption  │    │
-│   └─────────────────────────────┘    │
-│                                      │
-│   ☁️ Internet? Not required.         │
-└──────────────────────────────────────┘</div>
+    <div class="arch-visual">
+      <div class="arch-box arch-office">
+        <div class="arch-label">Your Office</div>
+        <div class="arch-node arch-devices">
+          <span class="arch-icon">💻</span>
+          <strong>Staff Devices</strong>
+          <small>Laptop, tablet, or phone — any browser</small>
+        </div>
+        <div class="arch-arrow">↓ Office Wi-Fi (LAN only)</div>
+        <div class="arch-node arch-appliance">
+          <span class="arch-icon">🖥️</span>
+          <strong>Local AI Appliance</strong>
+          <small>Models · Transcription · Vector Store · Encryption</small>
+        </div>
+        <div class="arch-footer">☁️ Internet? Not required.</div>
+      </div>
+    </div>
   </section>
 
   <!-- VERTICALS -->
