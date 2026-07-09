@@ -375,6 +375,61 @@ footer {
   font-weight: 500;
 }
 
+/* --- PII GUARD --- */
+.pii-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+.pii-flow {
+  text-align: center;
+}
+.pii-node {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  padding: 1.2rem;
+  margin: 0.5rem 0;
+}
+.pii-node .arch-icon {
+  font-size: 1.5rem;
+  display: block;
+  margin-bottom: 0.4rem;
+}
+.pii-node strong {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+.pii-node small {
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+}
+.pii-guard-node {
+  border-color: var(--color-green);
+  background: rgba(52, 211, 153, 0.05);
+}
+.pii-external {
+  border-color: var(--color-text-muted);
+  opacity: 0.7;
+}
+.pii-rehydrate {
+  border-color: var(--color-accent);
+}
+.pii-features {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.pii-features .feature-card {
+  padding: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .pii-grid { grid-template-columns: 1fr; }
+}
+
 /* --- RESPONSIVE --- */
 @media (max-width: 768px) {
   .about-grid { grid-template-columns: 1fr; }

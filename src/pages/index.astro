@@ -99,6 +99,65 @@ import Base from '../layouts/Base.astro';
     </div>
   </section>
 
+  <!-- PII GUARD -->
+  <section id="pii-guard">
+    <h2>Safe Internet Mode</h2>
+    <p class="section-subtitle">
+      Local-first doesn't have to mean offline-only. When your workflows need internet access, PII Guard keeps sensitive data from ever leaving your network.
+    </p>
+    <div class="pii-grid">
+      <div class="pii-visual">
+        <div class="pii-flow">
+          <div class="pii-node pii-staff">
+            <span class="arch-icon">💬</span>
+            <strong>Staff prompt</strong>
+            <small>"Summarize Mrs. Johnson's chart for the referral letter"</small>
+          </div>
+          <div class="arch-arrow">↓</div>
+          <div class="pii-node pii-guard-node">
+            <span class="arch-icon">🛡️</span>
+            <strong>PII Guard</strong>
+            <small>Names, DOBs, SSNs, phone numbers stripped before any external call</small>
+          </div>
+          <div class="arch-arrow">↓ Sanitized request</div>
+          <div class="pii-node pii-external">
+            <span class="arch-icon">☁️</span>
+            <strong>External Service</strong>
+            <small>Sees only de-identified data</small>
+          </div>
+          <div class="arch-arrow">↓ Response</div>
+          <div class="pii-node pii-rehydrate">
+            <span class="arch-icon">🔄</span>
+            <strong>Re-identification</strong>
+            <small>Original names and details restored locally — never exposed</small>
+          </div>
+        </div>
+      </div>
+      <div class="pii-features">
+        <div class="feature-card">
+          <div class="icon">🔍</div>
+          <h3>Automatic PII Detection</h3>
+          <p>Patient names, dates of birth, Social Security numbers, phone numbers, and addresses are detected and stripped before any data leaves your device.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">📋</div>
+          <h3>Full Audit Trail</h3>
+          <p>Every outbound request is logged — what was sent, what was redacted, and when. Your compliance officer can review anytime.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">🔒</div>
+          <h3>Allowlisted Services Only</h3>
+          <p>The practice admin controls exactly which external services are permitted. Default is fully offline — internet access is opt-in, per use case.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">⚡</div>
+          <h3>Best of Both Worlds</h3>
+          <p>Get the power of cloud AI for research, letter drafting, and communication — with the privacy guarantees of a local-first system.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- VERTICALS -->
   <section id="verticals">
     <h2>Who we work with</h2>
