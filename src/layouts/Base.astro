@@ -7,7 +7,7 @@ interface Props {
 const { title, description = 'Enclave Compute — Local AI deployment for privacy-sensitive businesses. Your data never leaves your building.' } = Astro.props;
 ---
 
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -18,18 +18,36 @@ const { title, description = 'Enclave Compute — Local AI deployment for privac
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <script is:inline>
+      // Set theme before first paint to avoid flash
+      (function () {
+        try {
+          const stored = localStorage.getItem('theme');
+          const prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+          const theme = stored || (prefersLight ? 'light' : 'dark');
+          document.documentElement.setAttribute('data-theme', theme);
+        } catch (e) {}
+      })();
+    </script>
   </head>
   <body>
     <nav>
       <div class="nav-inner">
         <a href="/" class="logo"><span>⬡</span> Enclave Compute</a>
-        <ul>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="/#what-we-do">What We Do</a></li>
           <li><a href="/#how-it-works">How It Works</a></li>
           <li><a href="/#pii-guard">PII Guard</a></li>
           <li><a href="/#verticals">Verticals</a></li>
           <li><a href="/#about">About</a></li>
           <li><a href="/#contact" class="btn btn-primary" style="padding: 0.5rem 1.2rem; font-size: 0.85rem;">Book a Demo</a></li>
         </ul>
+        <div class="nav-controls">
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark and light mode" title="Toggle theme">
+            <span class="icon-moon">🌙</span><span class="icon-sun">☀️</span>
+          </button>
+          <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+        </div>
       </div>
     </nav>
 
@@ -38,6 +56,32 @@ const { title, description = 'Enclave Compute — Local AI deployment for privac
     <footer>
       <p>&copy; {new Date().getFullYear()} Enclave Compute LLC. All rights reserved.</p>
     </footer>
+
+    <script is:inline>
+      // Theme toggle
+      const themeToggle = document.getElementById('theme-toggle');
+      themeToggle?.addEventListener('click', () => {
+        const current = document.documentElement.getAttribute('data-theme');
+        const next = current === 'light' ? 'dark' : 'light';
+        document.documentElement.setAttribute('data-theme', next);
+        try { localStorage.setItem('theme', next); } catch (e) {}
+      });
+
+      // Mobile nav toggle
+      const navToggle = document.getElementById('nav-toggle');
+      const navLinks = document.getElementById('nav-links');
+      navToggle?.addEventListener('click', () => {
+        const isOpen = navLinks.classList.toggle('open');
+        navToggle.setAttribute('aria-expanded', String(isOpen));
+      });
+      // Close menu when a link is clicked
+      navLinks?.querySelectorAll('a').forEach((a) => {
+        a.addEventListener('click', () => {
+          navLinks.classList.remove('open');
+          navToggle?.setAttribute('aria-expanded', 'false');
+        });
+      });
+    </script>
   </body>
 </html>
 
