@@ -5,6 +5,30 @@ interface Props {
 }
 
 const { title, description = 'Enclave Compute — Local AI deployment for privacy-sensitive businesses. Your data never leaves your building.' } = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const ogImage = new URL('/logo.png', Astro.site); // Fallback to logo until a specific OG image is added
+
+// LocalBusiness structured data (helps Google understand who/where we serve)
+const businessSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ProfessionalService',
+  name: 'Enclave Compute',
+  description:
+    'Local AI deployment for privacy-sensitive businesses. Your data never leaves your building.',
+  url: 'https://www.enclavecompute.net',
+  email: 'hello@enclavecompute.net',
+  logo: new URL('/logo.png', Astro.site).href,
+  image: new URL('/logo.png', Astro.site).href,
+  areaServed: [
+    'Raleigh, NC',
+    'Durham, NC',
+    'Chapel Hill, NC',
+    'Cary, NC',
+    'Garner, NC',
+    'Research Triangle, NC',
+  ].map((name) => ({ '@type': 'City', name })),
+};
 ---
 
 <html lang="en" data-theme="dark">
@@ -14,6 +38,27 @@ const { title, description = 'Enclave Compute — Local AI deployment for privac
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
     <meta name="generator" content={Astro.generator} />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href={canonicalURL} />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content={canonicalURL} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+
+    <!-- Structured data -->
+    <script type="application/ld+json" set:html={JSON.stringify(businessSchema)} />
+
     <title>{title}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
