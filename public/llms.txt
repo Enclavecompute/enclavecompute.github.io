@@ -1,0 +1,35 @@
+# Enclave Compute
+
+> Local AI deployment for privacy-sensitive businesses. Your data never leaves your building.
+
+## About
+
+Enclave Compute is an AI enablement consultancy based in the Research Triangle area of North Carolina. We help healthcare practices, law firms, and professional services adopt AI with confidence — with local, on-premise deployment as our specialty for workflows where data privacy matters most.
+
+We run a fixed-fee AI Readiness Assessment that audits workflows, delivers a written plan, and demos AI live on your own data. On-site deployment is typically live in under two weeks.
+
+## Key facts
+
+- Founded by engineers with backgrounds in enterprise data security, healthcare data systems, and applied AI
+- Service area: Raleigh, Durham, Chapel Hill, Cary, Garner, and the wider Research Triangle, NC
+- Deployment model: on-premise appliance + open-source models (Gemma, Whisper, Llama) — no cloud APIs, no third-party data processing, no per-user SaaS fees, no vendor lock-in
+- Works offline: no internet dependency, no outages or latency spikes
+- PII Guard feature strips names, DOBs, SSNs, and phone numbers before any external call, with a full audit trail and allowlisted services
+
+## Who we work with
+
+- Healthcare: dental, orthodontic, and medical practices
+- Legal: solo practitioners and small firms
+- Professional services: accounting, consulting, financial advisory
+
+## Core services
+
+- Local AI Deployment — private, on-premise AI for sensitive workflows
+- Cloud AI Adoption — where privacy allows, safe rollout of cloud AI tools
+- Integrations — connect AI to EHR, scheduling, billing, and document stores
+- AI Strategy & Training — roadmap, staff training, and change management
+
+## Contact
+
+- Email: info@enclavecompute.net
+- Website: https://www.enclavecompute.net
