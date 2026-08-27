@@ -29,6 +29,13 @@ We run a fixed-fee AI Readiness Assessment that audits workflows, delivers a wri
 - Integrations — connect AI to EHR, scheduling, billing, and document stores
 - AI Strategy & Training — roadmap, staff training, and change management
 
+## Detailed service pages
+
+- On-premise AI deployment: https://www.enclavecompute.net/services/on-premise-ai/
+- Private AI for healthcare practices: https://www.enclavecompute.net/industries/healthcare-ai/
+- Private AI for law firms: https://www.enclavecompute.net/industries/legal-ai/
+- Private AI for professional services: https://www.enclavecompute.net/industries/professional-services-ai/
+
 ## Contact
 
 - Email: info@enclavecompute.net

@@ -1,0 +1,53 @@
+---
+import Landing from '../../layouts/Landing.astro';
+
+const cards = [
+  {
+    title: 'Keep sensitive data local',
+    text: 'Run private workflows on a device inside your office instead of sending records, files, or conversations to a third-party AI service.',
+  },
+  {
+    title: 'Own the hardware and models',
+    text: 'Use open-source models on hardware you control, without per-user AI subscriptions or a proprietary platform dependency.',
+  },
+  {
+    title: 'Give staff browser-based access',
+    text: 'Employees use the AI from familiar devices on your office network, with access controls configured for the way your team works.',
+  },
+];
+
+const sections = [
+  {
+    title: 'A practical on-premise AI deployment',
+    paragraphs: [
+      'Enclave Compute starts by identifying workflows where privacy, reliability, or recurring software costs make local AI especially valuable. The AI Readiness Assessment maps those workflows, produces a written deployment plan, and demonstrates candidate tools on your own data.',
+      'If you move forward, we install a pre-configured AI appliance in your office, configure models and access controls, and connect the system to approved internal tools. Staff receive hands-on training and 30 days of included go-live support.',
+    ],
+  },
+  {
+    title: 'Local-first, with selective internet access',
+    paragraphs: [
+      'Core local AI functions can continue without an internet connection. When an approved workflow needs an external service, PII Guard can detect and remove personal identifiers before a request leaves the network, then restore the original details locally when the response returns.',
+      'This local-first design is useful for healthcare practices, law firms, accounting teams, consultants, and other organizations that want to adopt AI without treating every document as cloud-ready.',
+    ],
+  },
+];
+---
+
+<Landing
+  title="On-Premise AI Deployment in Raleigh, NC | Enclave Compute"
+  description="Private on-premise AI deployment for Raleigh and Research Triangle businesses. Keep sensitive data local on hardware you own, with setup and staff training included."
+  path="/services/on-premise-ai/"
+  badge="Private AI deployment in the Research Triangle"
+  heading="On-premise AI deployment for privacy-sensitive businesses"
+  intro="Deploy useful AI inside your office, on hardware you own, with models and access controls configured around your real workflows."
+  serviceType="On-premise AI consulting and deployment"
+  audience="Privacy-sensitive businesses"
+  cards={cards}
+  sections={sections}
+  relatedLinks={[
+    { href: '/industries/healthcare-ai/', label: 'Private AI for healthcare' },
+    { href: '/industries/legal-ai/', label: 'Private AI for law firms' },
+    { href: '/industries/professional-services-ai/', label: 'AI for professional services' },
+  ]}
+/>

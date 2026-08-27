@@ -1,0 +1,53 @@
+---
+import Landing from '../../layouts/Landing.astro';
+
+const cards = [
+  {
+    title: 'Review and summarize documents',
+    text: 'Create reviewable summaries of contracts, depositions, and case files without defaulting to a public cloud AI workflow.',
+  },
+  {
+    title: 'Search firm knowledge',
+    text: 'Ask questions across an approved internal document collection and trace the response back to the source material.',
+  },
+  {
+    title: 'Draft routine work product',
+    text: 'Prepare first drafts of client communications, clause comparisons, and internal case notes for attorney review.',
+  },
+];
+
+const sections = [
+  {
+    title: 'AI that respects confidential workflows',
+    paragraphs: [
+      'Law firms have high-value AI use cases and a strong reason to control where client information is processed. Local AI provides a practical option for selected confidential workflows by running models on hardware inside the firm instead of sending every document to an external AI provider.',
+      'Enclave Compute helps solo practitioners and small firms assess candidate workflows, configure the local system, and establish clear access boundaries. Open-source models and firm-owned hardware also reduce dependence on a single software vendor.',
+    ],
+  },
+  {
+    title: 'Build around attorney review',
+    paragraphs: [
+      'Useful legal AI should accelerate professional judgment, not replace it. We focus on bounded tasks with inspectable source material and outputs that remain subject to attorney review, such as document summarization, clause extraction, and first-draft communications.',
+      'A fixed-fee AI Readiness Assessment identifies a suitable first use case, documents the workflow and its data requirements, and demonstrates the approach on your own materials before deployment.',
+    ],
+  },
+];
+---
+
+<Landing
+  title="Private AI for Law Firms in Raleigh, NC | Enclave Compute"
+  description="Private, on-premise AI for solo attorneys and small law firms in Raleigh and the Research Triangle. Summarize, search, and draft while keeping client files local."
+  path="/industries/legal-ai/"
+  badge="Local AI for solo attorneys and small firms"
+  heading="Private AI for law firms"
+  intro="Use AI to summarize, search, and prepare first drafts while keeping selected client-file workflows on hardware inside your firm."
+  serviceType="Private AI consulting for law firms"
+  audience="Solo attorneys and small law firms"
+  cards={cards}
+  sections={sections}
+  relatedLinks={[
+    { href: '/services/on-premise-ai/', label: 'On-premise AI deployment' },
+    { href: '/industries/healthcare-ai/', label: 'Private AI for healthcare' },
+    { href: '/industries/professional-services-ai/', label: 'AI for professional services' },
+  ]}
+/>

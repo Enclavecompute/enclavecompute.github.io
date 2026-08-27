@@ -1,0 +1,53 @@
+---
+import Landing from '../../layouts/Landing.astro';
+
+const cards = [
+  {
+    title: 'Draft clinical documentation',
+    text: 'Turn dictated notes into structured drafts for staff review while keeping the source material on the practice network.',
+  },
+  {
+    title: 'Find answers in internal knowledge',
+    text: 'Help staff search approved policies, procedures, and reference documents without uploading the whole library to a public AI tool.',
+  },
+  {
+    title: 'Prepare routine communications',
+    text: 'Create first drafts of referral letters, pre-authorization materials, review responses, and other repeatable communications.',
+  },
+];
+
+const sections = [
+  {
+    title: 'AI designed around healthcare data boundaries',
+    paragraphs: [
+      'Healthcare practices often see clear opportunities for AI but cannot treat patient information like ordinary business content. A local AI appliance keeps selected workflows inside the practice network and gives the team control over which systems and users can access them.',
+      'Enclave Compute works with dental, orthodontic, and medical practices to identify useful first projects, test them against real workflows, and train staff on safe day-to-day use. The aim is not to add another disconnected tool; it is to reduce repetitive work without weakening the practice’s data-handling standards.',
+    ],
+  },
+  {
+    title: 'Start with a bounded workflow',
+    paragraphs: [
+      'A good first healthcare AI project has a clear input, a reviewable output, and a measurable burden today. Examples include drafting notes from voice, summarizing information for a morning huddle, or searching an approved staff knowledge base.',
+      'The AI Readiness Assessment helps the practice choose that first workflow, document operational and privacy requirements, and see a live demonstration before committing to a full deployment.',
+    ],
+  },
+];
+---
+
+<Landing
+  title="Private AI for Healthcare Practices in Raleigh, NC | Enclave Compute"
+  description="Local AI consulting for dental, orthodontic, and medical practices in Raleigh and the Research Triangle. Keep sensitive workflows on your practice network."
+  path="/industries/healthcare-ai/"
+  badge="Local AI for dental, orthodontic, and medical practices"
+  heading="Private AI for healthcare practices"
+  intro="Use AI for documentation, knowledge search, and routine communications while keeping selected patient-data workflows on your own network."
+  serviceType="Private AI consulting for healthcare practices"
+  audience="Dental, orthodontic, and medical practices"
+  cards={cards}
+  sections={sections}
+  relatedLinks={[
+    { href: '/services/on-premise-ai/', label: 'On-premise AI deployment' },
+    { href: '/industries/legal-ai/', label: 'Private AI for law firms' },
+    { href: '/industries/professional-services-ai/', label: 'AI for professional services' },
+  ]}
+/>

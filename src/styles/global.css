@@ -536,6 +536,99 @@ footer {
   margin-bottom: 0.75rem;
 }
 
+.text-link {
+  display: inline-block;
+  margin-top: 1.25rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* --- SEARCH LANDING PAGES --- */
+.detail-hero {
+  padding-top: 2.5rem;
+  text-align: left;
+}
+.detail-hero h1 {
+  max-width: 850px;
+  margin: 1.25rem 0 1.5rem;
+  font-size: clamp(2.25rem, 6vw, 3.6rem);
+  font-weight: 800;
+  line-height: 1.12;
+  letter-spacing: -0.03em;
+}
+.detail-hero > p {
+  max-width: 760px;
+  margin: 0 0 2rem;
+  color: var(--color-text-muted);
+  font-size: 1.2rem;
+}
+.detail-hero .btn-group { justify-content: flex-start; }
+.detail-hero .badge {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.35rem 0.9rem;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  background: var(--color-surface);
+  color: var(--color-green);
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+.breadcrumbs {
+  display: flex;
+  gap: 0.55rem;
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+}
+.breadcrumbs a { color: var(--color-text-muted); }
+.breadcrumbs a:hover { color: var(--color-text); }
+.content-sections {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 3rem;
+}
+.content-sections article {
+  padding-top: 2rem;
+  border-top: 1px solid var(--color-border);
+}
+.content-sections p {
+  margin-bottom: 1rem;
+  color: var(--color-text-muted);
+}
+.related-links {
+  padding: 2rem;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  background: var(--color-surface);
+}
+.related-links div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.5rem;
+}
+.related-links a { font-weight: 600; }
+
+/* --- FAQ --- */
+.faq-list {
+  display: grid;
+  gap: 1rem;
+}
+.faq-list details {
+  padding: 1.25rem 1.5rem;
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  background: var(--color-surface);
+}
+.faq-list summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+.faq-list p {
+  max-width: 800px;
+  padding-top: 0.85rem;
+  color: var(--color-text-muted);
+}
+
 /* --- RESPONSIVE --- */
 @media (max-width: 860px) {
   nav { padding: 0.85rem 1.25rem; }
@@ -578,6 +671,7 @@ footer {
 @media (max-width: 768px) {
   .about-grid { grid-template-columns: 1fr; }
   .pii-grid { grid-template-columns: 1fr; }
+  .content-sections { grid-template-columns: 1fr; }
   .hero { padding: 4rem 1.5rem 3rem; }
   .hero p { font-size: 1.05rem; }
   section { padding: 3rem 1.5rem; }

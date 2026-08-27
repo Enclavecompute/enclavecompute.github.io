@@ -1,0 +1,133 @@
+---
+import Base from './Base.astro';
+
+interface Card {
+  title: string;
+  text: string;
+}
+
+interface ContentSection {
+  title: string;
+  paragraphs: string[];
+}
+
+interface RelatedLink {
+  href: string;
+  label: string;
+}
+
+interface Props {
+  title: string;
+  description: string;
+  path: string;
+  badge: string;
+  heading: string;
+  intro: string;
+  serviceType: string;
+  audience: string;
+  cards: Card[];
+  sections: ContentSection[];
+  relatedLinks: RelatedLink[];
+}
+
+const {
+  title,
+  description,
+  path,
+  badge,
+  heading,
+  intro,
+  serviceType,
+  audience,
+  cards,
+  sections,
+  relatedLinks,
+} = Astro.props;
+
+const siteUrl = 'https://www.enclavecompute.net';
+const pageUrl = new URL(path, siteUrl).href;
+const structuredData = [
+  {
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Home',
+        item: siteUrl,
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: heading,
+        item: pageUrl,
+      },
+    ],
+  },
+  {
+    '@type': 'Service',
+    name: heading,
+    serviceType,
+    description,
+    url: pageUrl,
+    provider: { '@id': `${siteUrl}/#organization` },
+    audience: { '@type': 'Audience', audienceType: audience },
+    areaServed: { '@type': 'AdministrativeArea', name: 'Research Triangle, NC' },
+  },
+];
+---
+
+<Base title={title} description={description} structuredData={structuredData}>
+  <main>
+    <section class="detail-hero">
+      <div class="breadcrumbs" aria-label="Breadcrumb">
+        <a href="/">Home</a><span aria-hidden="true">/</span><span>{heading}</span>
+      </div>
+      <div class="badge">{badge}</div>
+      <h1>{heading}</h1>
+      <p>{intro}</p>
+      <div class="btn-group">
+        <a href="/#contact" class="btn btn-primary">Book a Free Intro Call</a>
+        <a href="#details" class="btn btn-outline">Learn How It Works</a>
+      </div>
+    </section>
+
+    <section id="details">
+      <h2>What this makes possible</h2>
+      <div class="feature-grid">
+        {cards.map((card) => (
+          <article class="feature-card">
+            <h3>{card.title}</h3>
+            <p>{card.text}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <section class="content-sections">
+      {sections.map((section) => (
+        <article>
+          <h2>{section.title}</h2>
+          {section.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+        </article>
+      ))}
+    </section>
+
+    <section>
+      <div class="related-links">
+        <h2>Explore related private AI services</h2>
+        <div>
+          {relatedLinks.map((link) => <a href={link.href}>{link.label} →</a>)}
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="cta-section">
+        <h2>See whether local AI fits your workflow</h2>
+        <p>A free 20-minute call is enough to identify a practical first use case and decide whether an on-premise approach makes sense.</p>
+        <a href="mailto:info@enclavecompute.net" class="btn btn-primary">info@enclavecompute.net</a>
+      </div>
+    </section>
+  </main>
+</Base>
