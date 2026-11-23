@@ -10,24 +10,24 @@ serviceAreas.push({ '@type': 'AdministrativeArea', name: 'Research Triangle, NC'
 
 const faqItems = [
   {
-    question: 'Why choose local AI instead of cloud AI?',
+    question: 'Do you recommend cloud AI or local AI?',
     answer:
-      'Cloud AI sends sensitive data to external servers. Enclave Compute keeps private workflows on a device in your office, so patient records, client files, and privileged communications remain on your network.',
+      'It depends on the workflow. ChatGPT Business and other cloud tools are often the fastest fit for everyday research, writing, and operations. When a workflow involves highly sensitive data, offline operation, or tighter infrastructure control, we can add de-identification, stronger access controls, or local execution.',
   },
   {
-    question: 'How does Enclave Compute deploy AI?',
+    question: 'What does a good first AI project look like?',
     answer:
-      'We start with a free 20-minute intro call, run a fixed-fee AI Readiness Assessment, and then deploy a pre-configured on-premise device with staff training and go-live support. A typical deployment is live in under two weeks.',
+      'It solves one measurable problem, uses clearly approved data, produces an output a person can review, and leaves your staff able to run the workflow without us. We start small, measure the result, and expand only when the first workflow earns trust.',
   },
   {
-    question: 'Who does Enclave Compute work with?',
+    question: 'Can you keep sensitive workflows off the public cloud?',
     answer:
-      'We work with healthcare practices, law firms, and professional services teams that handle sensitive data and want the benefits of AI without sending every workflow to the cloud.',
+      'Yes. Selected workflows can run on hardware inside your office with local models and access controls. Local execution reduces external data exposure, but it still requires sound device security, backups, permissions, policies, and human review.',
   },
   {
-    question: 'Does local AI work offline?',
+    question: 'How quickly can we launch something useful?',
     answer:
-      'Yes. Because the AI runs on hardware you own, core local workflows keep working if the internet goes down. Internet access can be enabled selectively for approved use cases.',
+      'A bounded first workflow can often be targeted for launch within two weeks after requirements, data access, and owner approvals are ready. Integrations, regulated data, and custom infrastructure can require more time.',
   },
 ];
 
@@ -37,7 +37,7 @@ const structuredData = [
     '@id': `${siteUrl}/#service`,
     name: 'Enclave Compute',
     description:
-      'Private, on-premise AI consulting and deployment for healthcare, legal, and professional services teams in the Research Triangle, NC.',
+      'Practical AI workflow consulting, automation, training, and private deployment for small businesses in the Research Triangle, NC.',
     url: siteUrl,
     email: 'info@enclavecompute.net',
     logo: `${siteUrl}/logo.png`,
@@ -58,22 +58,21 @@ const structuredData = [
 ---
 
 <Base
-  title="Private On-Premise AI Consulting in Raleigh, NC | Enclave Compute"
-  description="Deploy private AI on hardware you own. Enclave Compute provides on-premise AI consulting, integration, and staff training across Raleigh and the Research Triangle."
+  title="Practical AI Consulting in Raleigh, NC | Enclave Compute"
+  description="Turn one painful workflow at a time into a useful AI capability. Enclave Compute helps Triangle businesses adopt cloud, automated, and private AI safely."
   structuredData={structuredData}
 >
   <!-- HERO -->
   <section class="hero">
-    <div class="badge">🔒 Private AI, deployed your way</div>
-    <h1>Private, <span class="highlight">on-premise AI</span> for sensitive business data</h1>
+    <div class="badge">Practical AI for Triangle businesses</div>
+    <h1>Put AI to work—<span class="highlight">without losing control</span> of your data</h1>
     <p>
-      We help healthcare practices, law firms, and professional services adopt AI with
-      confidence. Local, on-premise AI is our specialty — but we guide you across your
-      entire AI journey, from strategy to deployment.
+      We help small businesses choose, deploy, and adopt the right AI for each workflow—from
+      ChatGPT Business and automation to private, on-premise AI when sensitive data demands it.
     </p>
     <div class="btn-group">
-      <a href="#contact" class="btn btn-primary">Book a Free Intro Call</a>
-      <a href="#what-we-do" class="btn btn-outline">See What We Do</a>
+      <a href="#contact" class="btn btn-primary">Start with a 20-minute call</a>
+      <a href="#workflows" class="btn btn-outline">See example workflows</a>
     </div>
   </section>
 
@@ -81,79 +80,71 @@ const structuredData = [
   <section id="what-we-do">
     <h2>What we do</h2>
     <p class="section-subtitle">
-      We're AI enablers. Local AI is where we go deepest, but we meet you wherever you
-      are — and grow with you.
+      Start with one useful workflow. Choose the simplest safe tool. Train your team to own it.
     </p>
     <div class="enabler-grid">
       <div class="enabler-card primary">
-        <span class="tag">Our specialty</span>
-        <div class="icon">🔒</div>
-        <h3>Local AI Deployment</h3>
-        <p>Private, on-premise AI for your most sensitive workflows. Your data never leaves your building.</p>
-        <a class="text-link" href="/services/on-premise-ai/">Explore on-premise AI deployment →</a>
+        <span class="tag">Start here</span>
+        <div class="icon">🧭</div>
+        <h3>Workflow Discovery & Training</h3>
+        <p>Find a high-value first use case, define safe data boundaries, build it with your team, and measure what changes.</p>
       </div>
       <div class="enabler-card">
         <div class="icon">☁️</div>
         <h3>Cloud AI Adoption</h3>
-        <p>Where privacy allows, we help you pick, configure, and safely roll out cloud AI tools.</p>
+        <p>Configure ChatGPT Business and other cloud tools for everyday research, writing, analysis, and operations.</p>
       </div>
       <div class="enabler-card">
         <div class="icon">🔗</div>
-        <h3>Integrations</h3>
-        <p>Connect AI to the systems you already run — EHR, scheduling, billing, and document stores.</p>
+        <h3>Automation & Integrations</h3>
+        <p>Connect approved AI workflows to the documents and systems your team already uses—with human review at consequential steps.</p>
       </div>
       <div class="enabler-card">
-        <div class="icon">📈</div>
-        <h3>AI Strategy & Training</h3>
-        <p>An AI roadmap, staff training, and change management so your team actually adopts it.</p>
+        <div class="icon">🔒</div>
+        <h3>Private AI Deployment</h3>
+        <p>Run selected sensitive or offline workflows on hardware you control, with local models and scoped access.</p>
+        <a class="text-link" href="/services/on-premise-ai/">Explore private AI deployment →</a>
       </div>
     </div>
   </section>
 
-  <!-- WHY LOCAL -->
-  <section>
-    <h2>Why local AI?</h2>
+  <!-- DEPLOYMENT CHOICES -->
+  <section id="workflows">
+    <h2>Choose the right deployment for the workflow</h2>
     <p class="section-subtitle">
-      Cloud AI sends your sensitive data to external servers. We keep everything on a device in your office.
+      We are not local-only or cloud-only. We match the architecture to the data, consequence, and operating reality.
     </p>
-    <div class="feature-grid">
+    <div class="choice-grid">
       <div class="feature-card">
-        <div class="icon">🔐</div>
-        <h3>Complete Data Privacy</h3>
-        <p>Patient records, client files, and privileged communications never leave your network. No cloud APIs, no third-party data processing.</p>
+        <div class="choice-kicker">Everyday work</div>
+        <div class="icon">☁️</div>
+        <h3>Cloud workbench</h3>
+        <p>Use managed business AI for research, drafting, marketing, and operations when the data and policy allow it.</p>
       </div>
       <div class="feature-card">
-        <div class="icon">⚡</div>
-        <h3>No Per-User Fees</h3>
-        <p>One-time deployment. No monthly SaaS subscriptions that scale with your headcount. The hardware is yours.</p>
+        <div class="choice-kicker">Repeatable processes</div>
+        <div class="icon">🔗</div>
+        <h3>Connected automation</h3>
+        <p>Turn approved inputs into reviewable outputs and connect them to existing systems without hiding the decision points.</p>
       </div>
       <div class="feature-card">
-        <div class="icon">🏥</div>
-        <h3>Compliance Simplified</h3>
-        <p>No Business Associate Agreements with cloud AI vendors. No vendor risk assessments. Your compliance officer will thank you.</p>
+        <div class="choice-kicker">Sensitive or offline work</div>
+        <div class="icon">🔒</div>
+        <h3>Private execution</h3>
+        <p>Keep selected workflows on your network when confidentiality, resilience, or infrastructure control outweighs cloud convenience.</p>
       </div>
-      <div class="feature-card">
-        <div class="icon">🛡️</div>
-        <h3>No Vendor Lock-In</h3>
-        <p>Open-source models on hardware you own. If you part ways with us, everything keeps running. Your data, your hardware, your choice.</p>
-      </div>
-      <div class="feature-card">
-        <div class="icon">📡</div>
-        <h3>Works Offline</h3>
-        <p>Internet goes down? Your AI keeps working. No cloud dependency means no outages, no latency spikes, no downtime.</p>
-      </div>
-      <div class="feature-card">
-        <div class="icon">🤝</div>
-        <h3>Local Support</h3>
-        <p>We're based in the Triangle, NC. When you need help, we're 20 minutes away — not a ticket queue in another timezone.</p>
-      </div>
+    </div>
+    <div class="principle-strip">
+      <span><strong>Bounded:</strong> one clear workflow</span>
+      <span><strong>Reviewable:</strong> people remain accountable</span>
+      <span><strong>Measurable:</strong> time, quality, or revenue impact</span>
     </div>
   </section>
 
   <!-- HOW IT WORKS -->
   <section id="how-it-works">
     <h2>How it works</h2>
-    <p class="section-subtitle">From first conversation to running AI in your office — deployment in under two weeks.</p>
+    <p class="section-subtitle">From first conversation to a bounded workflow your team can run and evaluate.</p>
     <div class="steps">
       <div class="step">
         <h3>Free Intro Call</h3>
@@ -164,30 +155,30 @@ const structuredData = [
         <p>A fixed-fee engagement: we audit your workflows, deliver a written plan, and demo AI live on your own data — credited toward your project if you move forward.</p>
       </div>
       <div class="step">
-        <h3>On-Site Deployment</h3>
-        <p>We install a pre-configured device in your office, set up the AI models for your use cases, and configure access controls.</p>
+        <h3>Build the First Workflow</h3>
+        <p>We configure the selected cloud, automation, or private-AI path and document its data, review, and approval boundaries.</p>
       </div>
       <div class="step">
         <h3>Staff Training & Go-Live</h3>
-        <p>90-minute on-site training. Your team is productive on day one. 30 days of included support.</p>
+        <p>Hands-on training teaches your team how to operate, review, and improve the first workflow. 30 days of included support.</p>
       </div>
     </div>
 
     <div class="arch-visual">
       <div class="arch-box arch-office">
-        <div class="arch-label">Your Office</div>
+        <div class="arch-label">Your Workflow</div>
         <div class="arch-node arch-devices">
           <span class="arch-icon">💻</span>
           <strong>Staff Devices</strong>
           <small>Laptop, tablet, or phone — any browser</small>
         </div>
-        <div class="arch-arrow">↓ Office Wi-Fi (LAN only)</div>
+        <div class="arch-arrow">↓ Approved access path</div>
         <div class="arch-node arch-appliance">
           <span class="arch-icon">🖥️</span>
-          <strong>Local AI Appliance</strong>
-          <small>Models · Transcription · Vector Store · Encryption</small>
+          <strong>Right-sized AI Workflow</strong>
+          <small>Cloud · Automation · Private execution</small>
         </div>
-        <div class="arch-footer">☁️ Internet? Not required.</div>
+        <div class="arch-footer">One workflow · Clear boundaries · Human review</div>
       </div>
     </div>
   </section>
@@ -196,7 +187,7 @@ const structuredData = [
   <section id="pii-guard">
     <h2>Safe Internet Mode</h2>
     <p class="section-subtitle">
-      Local-first doesn't have to mean offline-only. When your workflows need internet access, PII Guard keeps sensitive data from ever leaving your network.
+      Local-first doesn't have to mean offline-only. For approved external calls, PII Guard reduces exposure by detecting and redacting configured identifiers before a request leaves your network.
     </p>
     <div class="pii-grid">
       <div class="pii-visual">
@@ -210,7 +201,7 @@ const structuredData = [
           <div class="pii-node pii-guard-node">
             <span class="arch-icon">🛡️</span>
             <strong>PII Guard</strong>
-            <small>Names, DOBs, SSNs, phone numbers stripped before any external call</small>
+            <small>Configured identifiers detected and redacted before an approved external call</small>
           </div>
           <div class="arch-arrow">↓ Sanitized request</div>
           <div class="pii-node pii-external">
@@ -222,7 +213,7 @@ const structuredData = [
           <div class="pii-node pii-rehydrate">
             <span class="arch-icon">🔄</span>
             <strong>Re-identification</strong>
-            <small>Original names and details restored locally — never exposed</small>
+            <small>Mapped details restored locally after the response returns</small>
           </div>
         </div>
       </div>
@@ -230,12 +221,12 @@ const structuredData = [
         <div class="feature-card">
           <div class="icon">🔍</div>
           <h3>Automatic PII Detection</h3>
-          <p>Patient names, dates of birth, Social Security numbers, phone numbers, and addresses are detected and stripped before any data leaves your device.</p>
+          <p>Configured identifier types—including names, dates of birth, phone numbers, and addresses—can be detected and redacted before approved external calls.</p>
         </div>
         <div class="feature-card">
           <div class="icon">📋</div>
           <h3>Full Audit Trail</h3>
-          <p>Every outbound request is logged — what was sent, what was redacted, and when. Your compliance officer can review anytime.</p>
+          <p>Approved outbound workflows can record what was sent, what was redacted, and when for later review.</p>
         </div>
         <div class="feature-card">
           <div class="icon">🔒</div>
@@ -245,7 +236,7 @@ const structuredData = [
         <div class="feature-card">
           <div class="icon">⚡</div>
           <h3>Best of Both Worlds</h3>
-          <p>Get the power of cloud AI for research, letter drafting, and communication — with the privacy guarantees of a local-first system.</p>
+          <p>Use cloud capabilities selectively while retaining the privacy advantages of a local-first design. Redaction reduces risk; it is not a compliance guarantee.</p>
         </div>
       </div>
     </div>
@@ -253,9 +244,9 @@ const structuredData = [
 
   <!-- VERTICALS -->
   <section id="verticals">
-    <h2>Who we work with</h2>
+    <h2>Where we start</h2>
     <p class="section-subtitle">
-      Any business that handles sensitive data and wants AI without the cloud risk.
+      Bounded, reviewable workflows for small teams that handle customer, patient, client, or operational data.
     </p>
     <div class="vertical-cards">
       <div class="vertical-card">
@@ -303,41 +294,59 @@ const structuredData = [
     <div class="about-grid">
       <div class="about-text">
         <p>
-          Enclave Compute is an AI enablement consultancy based in the Triangle area of North Carolina.
-          We help privacy-sensitive businesses adopt AI on their terms — with local, on-premise
-          deployment as our specialty for the workflows where data privacy matters most.
+          Enclave Compute is a Garner-based AI enablement consultancy serving the Research Triangle.
+          We help small teams move from AI interest to one useful, governed workflow their staff can operate.
         </p>
         <p>
-          Founded by engineers with backgrounds in enterprise data security, healthcare data systems,
-          and applied AI — we understand both the technology and the compliance requirements
-          that come with handling sensitive data.
+          Our team brings product and engineering experience across payments, cloud security,
+          confidential computing, healthcare data platforms, and applied AI.
         </p>
         <p>
-          We believe AI should work for your business on your terms, running on hardware you own,
-          with data that never leaves your control.
+          We are vendor-pragmatic: use a managed cloud tool when it is the simplest safe choice;
+          use stronger controls or private execution when the workflow requires them.
         </p>
+        <p class="fine-print">Enclave Compute is an independent venture. Employer affiliations do not imply sponsorship or endorsement.</p>
       </div>
       <div class="about-highlights">
         <div class="about-highlight">
           <h4>🔬 Technical Depth</h4>
-          <p>Background in enterprise data security, healthcare data systems, and production AI deployments.</p>
+          <p>Hands-on prototypes, evaluation harnesses, workflow automation, privacy controls, and enterprise security experience.</p>
         </div>
         <div class="about-highlight">
           <h4>📍 Triangle, NC</h4>
-          <p>Local presence means on-site deployments, in-person training, and same-day support.</p>
+          <p>Local discovery, scheduled on-site delivery, in-person training, and practical follow-through.</p>
         </div>
         <div class="about-highlight">
-          <h4>🧱 Open Source Stack</h4>
-          <p>Built on proven open-source models (Gemma, Whisper, Llama). No proprietary lock-in.</p>
+          <h4>⚖️ Fit Over Fashion</h4>
+          <p>Cloud, automation, or local models—selected according to business value, data sensitivity, and operating constraints.</p>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- PROOF -->
+  <section id="proof">
+    <h2>Built and tested, not just advised</h2>
+    <p class="section-subtitle">Our current proof-of-work is a tested prototype kit, not a claim of completed client deployments.</p>
+    <div class="proof-grid">
+      <div class="proof-number">7/7</div>
+      <div>
+        <h3>Representative workflow checks passed</h3>
+        <p>Our selected local model passed rubric checks across seven synthetic-data workflows, including review analysis, document drafting, contract review, and voice-to-note generation.</p>
+      </div>
+      <div class="proof-number">13.5s</div>
+      <div>
+        <h3>Average response time in the selected evaluation</h3>
+        <p>We compared five local models instead of choosing by reputation. The harness exposed concrete quality and privacy failures in alternatives and gave us an evidence-based starting point.</p>
+      </div>
+    </div>
+    <p class="fine-print">Prototype results from controlled tests using synthetic inputs. They do not predict performance for every client workflow; each deployment requires its own acceptance criteria and human review.</p>
+  </section>
+
   <!-- FAQ -->
   <section id="faq">
     <h2>Frequently asked questions</h2>
-    <p class="section-subtitle">The essentials about deploying private AI in your office.</p>
+    <p class="section-subtitle">The essentials about choosing and launching a useful first AI workflow.</p>
     <div class="faq-list">
       {faqItems.map(({ question, answer }) => (
         <details>
@@ -351,9 +360,10 @@ const structuredData = [
   <!-- CTA -->
   <section>
     <div class="cta-section" id="contact">
-      <h2>Start with a free intro call</h2>
-      <p>Start with a free 20-minute call. Then a fixed-fee AI Readiness Assessment audits your workflows, delivers a written plan, and demos AI live on your own data — credited toward your project.</p>
-      <a href="mailto:info@enclavecompute.net" class="btn btn-primary">info@enclavecompute.net</a>
+      <h2>Start with one workflow</h2>
+      <p>Email us to schedule a free 20-minute conversation. If there is a fit, a fixed-fee AI Readiness Assessment maps the workflow, data boundaries, success measure, and recommended deployment path.</p>
+      <a href="mailto:info@enclavecompute.net?subject=Enclave%20Compute%20intro%20call" class="btn btn-primary">Email us to schedule</a>
+      <p class="contact-email">info@enclavecompute.net</p>
     </div>
   </section>
 </Base>

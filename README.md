@@ -1,43 +1,62 @@
-# Astro Starter Kit: Minimal
+# Enclave Compute Website
 
-```sh
-npm create astro@latest -- --template minimal
+Public marketing site for [Enclave Compute](https://www.enclavecompute.net), a Garner-based AI enablement consultancy serving small businesses across the Research Triangle.
+
+## Positioning
+
+Enclave Compute helps teams turn one painful workflow at a time into a useful AI capability. The company is vendor-pragmatic:
+
+- managed business AI for ordinary research, writing, and operations;
+- connected automation for repeatable, reviewable processes; and
+- private, on-premise execution when sensitive data or offline operation requires it.
+
+## Stack
+
+- [Astro](https://astro.build/) static site
+- GitHub Pages deployment
+- `@astrojs/sitemap` for sitemap generation
+- Plain Astro components and CSS; no client framework
+
+## Development
+
+```bash
+npm ci
+npm run astro -- dev --background
+npm run astro -- dev status
+npm run astro -- dev logs
+npm run astro -- dev stop
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Verification
 
-## 🚀 Project Structure
+Run all checks before opening or merging a change:
 
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+```bash
+npm run astro -- check
+npm run build
+npm audit --audit-level=high
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+The static output is written to `dist/`.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## Content rules
 
-Any static assets, like images, can be placed in the `public/` directory.
+- Lead with measurable business workflows, not technology categories.
+- Treat cloud, automation, and local AI as deployment choices—not ideologies.
+- Qualify privacy, compliance, availability, and redaction claims.
+- Label prototypes, synthetic-data tests, and evaluation results honestly.
+- Keep human review explicit for clinical, legal, financial, or public-facing work.
+- Do not publish client names, testimonials, or outcome claims without permission and supporting evidence.
 
-## 🧞 Commands
+## Structure
 
-All commands are run from the root of the project, from a terminal:
+- `src/pages/index.astro` — homepage and primary positioning
+- `src/pages/services/` — service-specific landing pages
+- `src/pages/industries/` — industry landing pages
+- `src/layouts/` — shared metadata, navigation, and landing-page layouts
+- `src/styles/global.css` — site styles and responsive rules
+- `public/llms.txt` — concise public description for AI crawlers
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## Deployment
 
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+The production site deploys from the repository's GitHub Pages workflow. A commit or local build is not publication; review and explicit approval are required before pushing a branch that will update the public site.
