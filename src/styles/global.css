@@ -262,6 +262,47 @@ section .section-subtitle {
   font-size: 0.95rem;
 }
 
+/* --- DEPLOYMENT CHOICES --- */
+.choice-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+.choice-grid .feature-card {
+  position: relative;
+  overflow: hidden;
+}
+.choice-grid .feature-card::after {
+  content: '';
+  position: absolute;
+  inset: auto -20% -55% 30%;
+  height: 180px;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--color-accent) 10%, transparent);
+  pointer-events: none;
+}
+.choice-kicker {
+  color: var(--color-green);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.principle-strip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--color-surface) 85%, transparent);
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}
+.principle-strip strong { color: var(--color-text); }
+
 /* --- VERTICALS --- */
 .vertical-cards {
   display: grid;
@@ -359,6 +400,36 @@ section .section-subtitle {
   color: var(--color-text-muted);
   font-size: 0.9rem;
 }
+.fine-print {
+  color: var(--color-text-muted);
+  font-size: 0.82rem;
+  line-height: 1.6;
+}
+
+/* --- PROOF --- */
+.proof-grid {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 1.5rem 2rem;
+  align-items: center;
+  padding: 2rem;
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  background: var(--color-surface);
+}
+.proof-number {
+  font-size: clamp(2.4rem, 6vw, 4rem);
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  color: var(--color-green);
+  text-align: center;
+}
+.proof-grid h3 {
+  margin-bottom: 0.4rem;
+  font-size: 1.15rem;
+}
+.proof-grid p { color: var(--color-text-muted); }
+#proof > .fine-print { margin-top: 1rem; max-width: 760px; }
 
 /* --- CTA --- */
 .cta-section {
@@ -375,6 +446,10 @@ section .section-subtitle {
   color: var(--color-text-muted);
   margin-bottom: 2rem;
   font-size: 1.1rem;
+}
+.cta-section .contact-email {
+  margin: 1rem 0 0;
+  font-size: 0.9rem;
 }
 
 /* --- FOOTER --- */
@@ -671,6 +746,8 @@ footer {
 @media (max-width: 768px) {
   .about-grid { grid-template-columns: 1fr; }
   .pii-grid { grid-template-columns: 1fr; }
+  .choice-grid { grid-template-columns: 1fr; }
+  .principle-strip { grid-template-columns: 1fr; }
   .content-sections { grid-template-columns: 1fr; }
   .hero { padding: 4rem 1.5rem 3rem; }
   .hero p { font-size: 1.05rem; }
@@ -680,6 +757,11 @@ footer {
   .btn-group { flex-direction: column; align-items: stretch; }
   .cta-section { padding: 2.5rem 1.5rem; }
   .arch-box { padding: 2rem 1.5rem; }
+  .proof-grid {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+  .proof-number { text-align: left; }
 }
 
 @media (max-width: 420px) {

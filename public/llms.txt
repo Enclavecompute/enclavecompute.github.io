@@ -1,20 +1,21 @@
 # Enclave Compute
 
-> Local AI deployment for privacy-sensitive businesses. Your data never leaves your building.
+> Practical AI workflow consulting for Triangle small businesses, with cloud, automation, and private deployment options matched to the work.
 
 ## About
 
-Enclave Compute is an AI enablement consultancy based in the Research Triangle area of North Carolina. We help healthcare practices, law firms, and professional services adopt AI with confidence — with local, on-premise deployment as our specialty for workflows where data privacy matters most.
+Enclave Compute is a Garner-based AI enablement consultancy serving the Research Triangle. We help small businesses choose, build, and adopt one useful AI workflow at a time. We are vendor-pragmatic: managed cloud tools for ordinary work, connected automation for repeatable processes, and private execution when sensitive data or offline operation requires it.
 
-We run a fixed-fee AI Readiness Assessment that audits workflows, delivers a written plan, and demos AI live on your own data. On-site deployment is typically live in under two weeks.
+We run a fixed-fee AI Readiness Assessment that maps a workflow, its data boundaries, human review points, success measure, and recommended deployment path. A bounded first workflow can often be targeted for launch within two weeks after requirements, access, and approvals are ready.
 
 ## Key facts
 
-- Founded by engineers with backgrounds in enterprise data security, healthcare data systems, and applied AI
+- Backed by product and engineering experience spanning payments, enterprise security, confidential computing, healthcare data platforms, cloud systems, and applied AI
 - Service area: Raleigh, Durham, Chapel Hill, Cary, Garner, and the wider Research Triangle, NC
-- Deployment model: on-premise appliance + open-source models (Gemma, Whisper, Llama) — no cloud APIs, no third-party data processing, no per-user SaaS fees, no vendor lock-in
-- Works offline: no internet dependency, no outages or latency spikes
-- PII Guard feature strips names, DOBs, SSNs, and phone numbers before any external call, with a full audit trail and allowlisted services
+- Deployment options: ChatGPT Business and other managed tools, connected workflow automation, or an on-premise appliance with open-source models
+- Selected private workflows can continue through an internet outage
+- PII Guard can redact configured identifier types before approved external calls; it reduces exposure but is not a compliance guarantee
+- Current proof-of-work is a tested prototype kit using synthetic inputs, not a claim of completed client deployments
 
 ## Who we work with
 
@@ -24,10 +25,10 @@ We run a fixed-fee AI Readiness Assessment that audits workflows, delivers a wri
 
 ## Core services
 
-- Local AI Deployment — private, on-premise AI for sensitive workflows
-- Cloud AI Adoption — where privacy allows, safe rollout of cloud AI tools
-- Integrations — connect AI to EHR, scheduling, billing, and document stores
-- AI Strategy & Training — roadmap, staff training, and change management
+- Workflow Discovery & Training — select a measurable first use case and teach staff to own it
+- Cloud AI Adoption — configure managed business AI for ordinary work
+- Automation & Integrations — connect approved inputs and systems with human review
+- Private AI Deployment — local execution for selected sensitive or offline workflows
 
 ## Detailed service pages
 

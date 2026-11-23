@@ -4,11 +4,11 @@ import Landing from '../../layouts/Landing.astro';
 const cards = [
   {
     title: 'Keep sensitive data local',
-    text: 'Run private workflows on a device inside your office instead of sending records, files, or conversations to a third-party AI service.',
+    text: 'Run selected private workflows on a device inside your office to reduce external data exposure.',
   },
   {
     title: 'Own the hardware and models',
-    text: 'Use open-source models on hardware you control, without per-user AI subscriptions or a proprietary platform dependency.',
+    text: 'Use open-source models on hardware you control and reduce dependence on a single hosted AI platform.',
   },
   {
     title: 'Give staff browser-based access',
@@ -27,7 +27,8 @@ const sections = [
   {
     title: 'Local-first, with selective internet access',
     paragraphs: [
-      'Core local AI functions can continue without an internet connection. When an approved workflow needs an external service, PII Guard can detect and remove personal identifiers before a request leaves the network, then restore the original details locally when the response returns.',
+      'Core local AI functions can continue through an internet outage. When an approved workflow needs an external service, PII Guard can detect and redact configured identifiers before a request leaves the network, then restore mapped details locally when the response returns.',
+      'Redaction is a risk-reduction control, not a guarantee that every sensitive detail will be detected. Production use requires workflow-specific testing, access controls, logging, and human review.',
       'This local-first design is useful for healthcare practices, law firms, accounting teams, consultants, and other organizations that want to adopt AI without treating every document as cloud-ready.',
     ],
   },

@@ -8,7 +8,7 @@ interface Props {
 
 const {
   title,
-  description = 'Private, on-premise AI consulting and deployment for healthcare, legal, and professional services teams in the Research Triangle, NC.',
+  description = 'Practical AI workflow consulting, automation, training, and private deployment for small businesses in the Research Triangle, NC.',
   noindex = false,
   structuredData,
 } = Astro.props;
@@ -29,7 +29,7 @@ const defaultStructuredData = {
       image: new URL('/logo.png', Astro.site).href,
       email: 'info@enclavecompute.net',
       description:
-        'Local AI deployment for privacy-sensitive businesses. Your data never leaves your building.',
+        'Practical AI workflow consulting, automation, training, and private deployment for small businesses in the Research Triangle, NC.',
       contactPoint: {
         '@type': 'ContactPoint',
         email: 'info@enclavecompute.net',
@@ -109,10 +109,10 @@ const pageStructuredData = structuredData
         <ul class="nav-links" id="nav-links">
           <li><a href="/#what-we-do">What We Do</a></li>
           <li><a href="/#how-it-works">How It Works</a></li>
-          <li><a href="/#pii-guard">PII Guard</a></li>
+          <li><a href="/#workflows">How We Choose</a></li>
           <li><a href="/#verticals">Verticals</a></li>
           <li><a href="/#about">About</a></li>
-          <li><a href="/#contact" class="btn btn-primary" style="padding: 0.5rem 1.2rem; font-size: 0.85rem;">Book a Call</a></li>
+          <li><a href="/#contact" class="btn btn-primary" style="padding: 0.5rem 1.2rem; font-size: 0.85rem;">Email Us</a></li>
         </ul>
         <div class="nav-controls">
           <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark and light mode" title="Toggle theme">
@@ -126,7 +126,7 @@ const pageStructuredData = structuredData
     <slot />
 
     <footer>
-      <p>&copy; {new Date().getFullYear()} Enclave Compute LLC. All rights reserved.</p>
+      <p>&copy; {new Date().getFullYear()} Enclave Compute. All rights reserved.</p>
     </footer>
 
     <script is:inline>
