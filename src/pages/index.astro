@@ -10,19 +10,19 @@ serviceAreas.push({ '@type': 'AdministrativeArea', name: 'Research Triangle, NC'
 
 const faqItems = [
   {
-    question: 'Do you recommend cloud AI or local AI?',
+    question: 'What can AI improve in a small business?',
     answer:
-      'It depends on the workflow. ChatGPT Business and other cloud tools are often the fastest fit for everyday research, writing, and operations. When a workflow involves highly sensitive data, offline operation, or tighter infrastructure control, we can add de-identification, stronger access controls, or local execution.',
+      'The best opportunities are usually repetitive, information-heavy tasks: finding answers across documents, drafting routine communications, summarizing meetings, preparing reports, extracting information, and moving work between systems. We look for a clear burden, a reviewable output, and a result worth measuring.',
   },
   {
-    question: 'What does a good first AI project look like?',
+    question: 'Do we need to replace the tools we already use?',
     answer:
-      'It solves one measurable problem, uses clearly approved data, produces an output a person can review, and leaves your staff able to run the workflow without us. We start small, measure the result, and expand only when the first workflow earns trust.',
+      'Usually not. We prefer to configure and connect tools around the way your team already works. A good first project should reduce friction rather than force a broad software migration.',
   },
   {
-    question: 'Can you keep sensitive workflows off the public cloud?',
+    question: 'How do you handle sensitive data?',
     answer:
-      'Yes. Selected workflows can run on hardware inside your office with local models and access controls. Local execution reduces external data exposure, but it still requires sound device security, backups, permissions, policies, and human review.',
+      'We define approved data and access boundaries before building. Depending on the workflow, controls can include business-grade accounts, restricted access, redaction, audit trails, human approval, or private infrastructure. The goal is the simplest approach that fits the actual risk.',
   },
   {
     question: 'How quickly can we launch something useful?',
@@ -37,7 +37,7 @@ const structuredData = [
     '@id': `${siteUrl}/#service`,
     name: 'Enclave Compute',
     description:
-      'Practical AI workflow consulting, automation, training, and private deployment for small businesses in the Research Triangle, NC.',
+      'Practical AI consulting, workflow automation, and team training for small businesses in the Research Triangle, NC.',
     url: siteUrl,
     email: 'info@enclavecompute.net',
     logo: `${siteUrl}/logo.png`,
@@ -59,16 +59,15 @@ const structuredData = [
 
 <Base
   title="Practical AI Consulting in Raleigh, NC | Enclave Compute"
-  description="Turn one painful workflow at a time into a useful AI capability. Enclave Compute helps Triangle businesses adopt cloud, automated, and private AI safely."
+  description="Enclave Compute helps Triangle small businesses find useful AI opportunities, automate repetitive work, and train teams to adopt AI with confidence."
   structuredData={structuredData}
 >
-  <!-- HERO -->
   <section class="hero">
     <div class="badge">Practical AI for Triangle businesses</div>
-    <h1>Put AI to work—<span class="highlight">without losing control</span> of your data</h1>
+    <h1>Turn repetitive work into <span class="highlight">useful AI workflows</span></h1>
     <p>
-      We help small businesses choose, deploy, and adopt the right AI for each workflow—from
-      ChatGPT Business and automation to private, on-premise AI when sensitive data demands it.
+      We help small businesses identify the right opportunities, configure the tools, automate the
+      handoffs, and train their teams—starting with one workflow that can prove its value.
     </p>
     <div class="btn-group">
       <a href="#contact" class="btn btn-primary">Start with a 20-minute call</a>
@@ -76,62 +75,59 @@ const structuredData = [
     </div>
   </section>
 
-  <!-- WHAT WE DO / AI ENABLERS -->
   <section id="what-we-do">
-    <h2>What we do</h2>
+    <h2>From AI interest to everyday use</h2>
     <p class="section-subtitle">
-      Start with one useful workflow. Choose the simplest safe tool. Train your team to own it.
+      Strategy, implementation, and adoption in one practical engagement.
     </p>
     <div class="enabler-grid">
       <div class="enabler-card primary">
         <span class="tag">Start here</span>
         <div class="icon">🧭</div>
-        <h3>Workflow Discovery & Training</h3>
-        <p>Find a high-value first use case, define safe data boundaries, build it with your team, and measure what changes.</p>
+        <h3>Opportunity Mapping</h3>
+        <p>Find the work where AI can save time, improve consistency, or help your team respond faster.</p>
       </div>
       <div class="enabler-card">
-        <div class="icon">☁️</div>
-        <h3>Cloud AI Adoption</h3>
-        <p>Configure ChatGPT Business and other cloud tools for everyday research, writing, analysis, and operations.</p>
+        <div class="icon">🛠️</div>
+        <h3>Workflow Implementation</h3>
+        <p>Configure the right business AI tools and turn a promising use case into a repeatable process.</p>
       </div>
       <div class="enabler-card">
         <div class="icon">🔗</div>
-        <h3>Automation & Integrations</h3>
-        <p>Connect approved AI workflows to the documents and systems your team already uses—with human review at consequential steps.</p>
+        <h3>Automation & Integration</h3>
+        <p>Connect approved inputs, documents, and systems while keeping consequential decisions visible to people.</p>
       </div>
       <div class="enabler-card">
-        <div class="icon">🔒</div>
-        <h3>Private AI Deployment</h3>
-        <p>Run selected sensitive or offline workflows on hardware you control, with local models and scoped access.</p>
-        <a class="text-link" href="/services/on-premise-ai/">Explore private AI deployment →</a>
+        <div class="icon">🎓</div>
+        <h3>Team Training & Adoption</h3>
+        <p>Give staff hands-on practice, clear usage boundaries, and the confidence to improve the workflow over time.</p>
       </div>
     </div>
   </section>
 
-  <!-- DEPLOYMENT CHOICES -->
   <section id="workflows">
-    <h2>Choose the right deployment for the workflow</h2>
+    <h2>What a useful first workflow can look like</h2>
     <p class="section-subtitle">
-      We are not local-only or cloud-only. We match the architecture to the data, consequence, and operating reality.
+      Start with a real business burden—not a technology shopping list.
     </p>
     <div class="choice-grid">
       <div class="feature-card">
-        <div class="choice-kicker">Everyday work</div>
-        <div class="icon">☁️</div>
-        <h3>Cloud workbench</h3>
-        <p>Use managed business AI for research, drafting, marketing, and operations when the data and policy allow it.</p>
+        <div class="choice-kicker">Find</div>
+        <div class="icon">🔎</div>
+        <h3>Make knowledge easier to use</h3>
+        <p>Help staff find grounded answers across approved policies, procedures, prior work, and reference documents.</p>
       </div>
       <div class="feature-card">
-        <div class="choice-kicker">Repeatable processes</div>
-        <div class="icon">🔗</div>
-        <h3>Connected automation</h3>
-        <p>Turn approved inputs into reviewable outputs and connect them to existing systems without hiding the decision points.</p>
+        <div class="choice-kicker">Create</div>
+        <div class="icon">✍️</div>
+        <h3>Prepare reviewable first drafts</h3>
+        <p>Turn source material into reports, summaries, routine communications, and other drafts your team can check.</p>
       </div>
       <div class="feature-card">
-        <div class="choice-kicker">Sensitive or offline work</div>
-        <div class="icon">🔒</div>
-        <h3>Private execution</h3>
-        <p>Keep selected workflows on your network when confidentiality, resilience, or infrastructure control outweighs cloud convenience.</p>
+        <div class="choice-kicker">Move</div>
+        <div class="icon">⚙️</div>
+        <h3>Automate repetitive handoffs</h3>
+        <p>Extract information, create follow-up tasks, and route approved outputs into the systems your team already uses.</p>
       </div>
     </div>
     <div class="principle-strip">
@@ -141,123 +137,69 @@ const structuredData = [
     </div>
   </section>
 
-  <!-- HOW IT WORKS -->
   <section id="how-it-works">
     <h2>How it works</h2>
-    <p class="section-subtitle">From first conversation to a bounded workflow your team can run and evaluate.</p>
+    <p class="section-subtitle">A small first engagement, built to produce evidence instead of a long transformation plan.</p>
     <div class="steps">
       <div class="step">
         <h3>Free Intro Call</h3>
-        <p>A 20-minute call to understand your workflows and see if we're a fit. No cost, no commitment.</p>
+        <p>A 20-minute conversation about where work gets stuck and whether there is a useful place to begin.</p>
       </div>
       <div class="step">
         <h3>AI Readiness Assessment</h3>
-        <p>A fixed-fee engagement: we audit your workflows, deliver a written plan, and demo AI live on your own data — credited toward your project if you move forward.</p>
+        <p>A fixed-fee workflow audit, written recommendation, and live demonstration—credited toward the project if you continue.</p>
       </div>
       <div class="step">
         <h3>Build the First Workflow</h3>
-        <p>We configure the selected cloud, automation, or private-AI path and document its data, review, and approval boundaries.</p>
+        <p>We configure the tools, document the inputs and review points, and test the workflow against agreed acceptance criteria.</p>
       </div>
       <div class="step">
-        <h3>Staff Training & Go-Live</h3>
-        <p>Hands-on training teaches your team how to operate, review, and improve the first workflow. 30 days of included support.</p>
-      </div>
-    </div>
-
-    <div class="arch-visual">
-      <div class="arch-box arch-office">
-        <div class="arch-label">Your Workflow</div>
-        <div class="arch-node arch-devices">
-          <span class="arch-icon">💻</span>
-          <strong>Staff Devices</strong>
-          <small>Laptop, tablet, or phone — any browser</small>
-        </div>
-        <div class="arch-arrow">↓ Approved access path</div>
-        <div class="arch-node arch-appliance">
-          <span class="arch-icon">🖥️</span>
-          <strong>Right-sized AI Workflow</strong>
-          <small>Cloud · Automation · Private execution</small>
-        </div>
-        <div class="arch-footer">One workflow · Clear boundaries · Human review</div>
+        <h3>Train, Launch, Improve</h3>
+        <p>Your staff learns to operate and review the workflow, with 30 days of included support after launch.</p>
       </div>
     </div>
   </section>
 
-  <!-- PII GUARD -->
-  <section id="pii-guard">
-    <h2>Safe Internet Mode</h2>
+  <section id="responsible-ai">
+    <h2>Practical controls, matched to the risk</h2>
     <p class="section-subtitle">
-      Local-first doesn't have to mean offline-only. For approved external calls, PII Guard reduces exposure by detecting and redacting configured identifiers before a request leaves your network.
+      Responsible implementation is part of the workflow—not a policy document added at the end.
     </p>
-    <div class="pii-grid">
-      <div class="pii-visual">
-        <div class="pii-flow">
-          <div class="pii-node pii-staff">
-            <span class="arch-icon">💬</span>
-            <strong>Staff prompt</strong>
-            <small>"Summarize Mrs. Johnson's chart for the referral letter"</small>
-          </div>
-          <div class="arch-arrow">↓</div>
-          <div class="pii-node pii-guard-node">
-            <span class="arch-icon">🛡️</span>
-            <strong>PII Guard</strong>
-            <small>Configured identifiers detected and redacted before an approved external call</small>
-          </div>
-          <div class="arch-arrow">↓ Sanitized request</div>
-          <div class="pii-node pii-external">
-            <span class="arch-icon">☁️</span>
-            <strong>External Service</strong>
-            <small>Sees only de-identified data</small>
-          </div>
-          <div class="arch-arrow">↓ Response</div>
-          <div class="pii-node pii-rehydrate">
-            <span class="arch-icon">🔄</span>
-            <strong>Re-identification</strong>
-            <small>Mapped details restored locally after the response returns</small>
-          </div>
-        </div>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="icon">📥</div>
+        <h3>Approved inputs</h3>
+        <p>Define what data the workflow may use, who can access it, and where it is allowed to go.</p>
       </div>
-      <div class="pii-features">
-        <div class="feature-card">
-          <div class="icon">🔍</div>
-          <h3>Automatic PII Detection</h3>
-          <p>Configured identifier types—including names, dates of birth, phone numbers, and addresses—can be detected and redacted before approved external calls.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon">📋</div>
-          <h3>Full Audit Trail</h3>
-          <p>Approved outbound workflows can record what was sent, what was redacted, and when for later review.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon">🔒</div>
-          <h3>Allowlisted Services Only</h3>
-          <p>The practice admin controls exactly which external services are permitted. Default is fully offline — internet access is opt-in, per use case.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon">⚡</div>
-          <h3>Best of Both Worlds</h3>
-          <p>Use cloud capabilities selectively while retaining the privacy advantages of a local-first design. Redaction reduces risk; it is not a compliance guarantee.</p>
-        </div>
+      <div class="feature-card">
+        <div class="icon">👤</div>
+        <h3>Human checkpoints</h3>
+        <p>Keep people accountable for customer-facing, clinical, legal, financial, and other consequential outputs.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">🛡️</div>
+        <h3>Right-sized safeguards</h3>
+        <p>Use business-grade accounts, access controls, redaction, auditability, or private deployment when the workflow warrants it.</p>
+        <a class="text-link" href="/services/on-premise-ai/">When private deployment is the right fit →</a>
       </div>
     </div>
   </section>
 
-  <!-- VERTICALS -->
   <section id="verticals">
-    <h2>Where we start</h2>
+    <h2>Where we work</h2>
     <p class="section-subtitle">
-      Bounded, reviewable workflows for small teams that handle customer, patient, client, or operational data.
+      Practical workflows for small teams that handle customer, patient, client, or operational information.
     </p>
     <div class="vertical-cards">
       <div class="vertical-card">
         <h3>🏥 Healthcare</h3>
         <p style="color: var(--color-text-muted); margin-bottom: 1rem;">Dental, orthodontic, and medical practices</p>
         <ul>
-          <li>Clinical note drafting (SOAP notes from voice)</li>
-          <li>Patient review intelligence & response</li>
-          <li>Pre-authorization letter drafting</li>
+          <li>Documentation first drafts</li>
+          <li>Patient communication support</li>
           <li>Morning huddle briefs</li>
-          <li>Staff knowledge base</li>
+          <li>Staff knowledge search</li>
+          <li>Administrative workflow automation</li>
         </ul>
         <a class="text-link" href="/industries/healthcare-ai/">AI for healthcare practices →</a>
       </div>
@@ -265,22 +207,22 @@ const structuredData = [
         <h3>⚖️ Legal</h3>
         <p style="color: var(--color-text-muted); margin-bottom: 1rem;">Solo practitioners and small firms</p>
         <ul>
-          <li>Contract review & clause extraction</li>
-          <li>Deposition summarization</li>
-          <li>Case research assistance</li>
-          <li>Client communication drafting</li>
-          <li>Document organization & search</li>
+          <li>Document review and summarization</li>
+          <li>Contract clause extraction</li>
+          <li>Case knowledge search</li>
+          <li>Client communication drafts</li>
+          <li>Administrative workflow automation</li>
         </ul>
         <a class="text-link" href="/industries/legal-ai/">AI for law firms →</a>
       </div>
       <div class="vertical-card">
         <h3>🏢 Professional Services</h3>
-        <p style="color: var(--color-text-muted); margin-bottom: 1rem;">Accounting, consulting, financial advisory</p>
+        <p style="color: var(--color-text-muted); margin-bottom: 1rem;">Accounting, consulting, and advisory teams</p>
         <ul>
-          <li>Client report generation</li>
-          <li>Document summarization</li>
-          <li>Internal knowledge base</li>
-          <li>Review monitoring & response</li>
+          <li>Client report first drafts</li>
+          <li>Meeting and document summaries</li>
+          <li>Internal knowledge search</li>
+          <li>Lead and inquiry follow-up</li>
           <li>Process automation</li>
         </ul>
         <a class="text-link" href="/industries/professional-services-ai/">AI for professional services →</a>
@@ -288,29 +230,27 @@ const structuredData = [
     </div>
   </section>
 
-  <!-- ABOUT -->
   <section id="about">
     <h2>About Enclave Compute</h2>
     <div class="about-grid">
       <div class="about-text">
         <p>
           Enclave Compute is a Garner-based AI enablement consultancy serving the Research Triangle.
-          We help small teams move from AI interest to one useful, governed workflow their staff can operate.
+          We help small teams move from experimentation to one useful workflow their staff can operate and improve.
         </p>
         <p>
-          Our team brings product and engineering experience across payments, cloud security,
-          confidential computing, healthcare data platforms, and applied AI.
+          Our team brings product and engineering experience across payments, enterprise security,
+          healthcare data platforms, cloud systems, workflow automation, and applied AI.
         </p>
         <p>
-          We are vendor-pragmatic: use a managed cloud tool when it is the simplest safe choice;
-          use stronger controls or private execution when the workflow requires them.
+          We recommend tools based on business value, ease of adoption, data requirements, and operating constraints—not vendor loyalty or technical fashion.
         </p>
         <p class="fine-print">Enclave Compute is an independent venture. Employer affiliations do not imply sponsorship or endorsement.</p>
       </div>
       <div class="about-highlights">
         <div class="about-highlight">
-          <h4>🔬 Technical Depth</h4>
-          <p>Hands-on prototypes, evaluation harnesses, workflow automation, privacy controls, and enterprise security experience.</p>
+          <h4>🔬 Built and Tested</h4>
+          <p>We use prototypes, evaluation criteria, and workflow testing before asking a team to rely on a solution.</p>
         </div>
         <div class="about-highlight">
           <h4>📍 Triangle, NC</h4>
@@ -318,32 +258,12 @@ const structuredData = [
         </div>
         <div class="about-highlight">
           <h4>⚖️ Fit Over Fashion</h4>
-          <p>Cloud, automation, or local models—selected according to business value, data sensitivity, and operating constraints.</p>
+          <p>The right tool is the one your team can use safely, affordably, and repeatedly.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- PROOF -->
-  <section id="proof">
-    <h2>Built and tested, not just advised</h2>
-    <p class="section-subtitle">Our current proof-of-work is a tested prototype kit, not a claim of completed client deployments.</p>
-    <div class="proof-grid">
-      <div class="proof-number">7/7</div>
-      <div>
-        <h3>Representative workflow checks passed</h3>
-        <p>Our selected local model passed rubric checks across seven synthetic-data workflows, including review analysis, document drafting, contract review, and voice-to-note generation.</p>
-      </div>
-      <div class="proof-number">13.5s</div>
-      <div>
-        <h3>Average response time in the selected evaluation</h3>
-        <p>We compared five local models instead of choosing by reputation. The harness exposed concrete quality and privacy failures in alternatives and gave us an evidence-based starting point.</p>
-      </div>
-    </div>
-    <p class="fine-print">Prototype results from controlled tests using synthetic inputs. They do not predict performance for every client workflow; each deployment requires its own acceptance criteria and human review.</p>
-  </section>
-
-  <!-- FAQ -->
   <section id="faq">
     <h2>Frequently asked questions</h2>
     <p class="section-subtitle">The essentials about choosing and launching a useful first AI workflow.</p>
@@ -357,11 +277,10 @@ const structuredData = [
     </div>
   </section>
 
-  <!-- CTA -->
   <section>
     <div class="cta-section" id="contact">
       <h2>Start with one workflow</h2>
-      <p>Email us to schedule a free 20-minute conversation. If there is a fit, a fixed-fee AI Readiness Assessment maps the workflow, data boundaries, success measure, and recommended deployment path.</p>
+      <p>Email us to schedule a free 20-minute conversation. If there is a fit, a fixed-fee AI Readiness Assessment maps the opportunity, current process, data boundaries, success measure, and recommended next step.</p>
       <a href="mailto:info@enclavecompute.net?subject=Enclave%20Compute%20intro%20call" class="btn btn-primary">Email us to schedule</a>
       <p class="contact-email">info@enclavecompute.net</p>
     </div>
