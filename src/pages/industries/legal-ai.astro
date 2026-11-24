@@ -4,50 +4,50 @@ import Landing from '../../layouts/Landing.astro';
 const cards = [
   {
     title: 'Review and summarize documents',
-    text: 'Create reviewable summaries of contracts, depositions, and case files without defaulting to a public cloud AI workflow.',
+    text: 'Create reviewable summaries of contracts, depositions, correspondence, and case materials with links back to source text where practical.',
   },
   {
     title: 'Search firm knowledge',
-    text: 'Ask questions across an approved internal document collection and trace the response back to the source material.',
+    text: 'Help attorneys and staff find relevant information across approved templates, prior work, policies, and reference collections.',
   },
   {
-    title: 'Draft routine work product',
-    text: 'Prepare first drafts of client communications, clause comparisons, and internal case notes for attorney review.',
+    title: 'Prepare routine first drafts',
+    text: 'Draft client communications, clause comparisons, intake summaries, and internal notes for attorney review.',
   },
 ];
 
 const sections = [
   {
-    title: 'AI that respects confidential workflows',
+    title: 'Accelerate the work around legal judgment',
     paragraphs: [
-      'Law firms have high-value AI use cases and a strong reason to control where client information is processed. Local AI provides a practical option for selected confidential workflows by running models on hardware inside the firm instead of sending every document to an external AI provider.',
-      'Enclave Compute helps solo practitioners and small firms assess candidate workflows, configure the local system, and establish clear access boundaries. Open-source models and firm-owned hardware also reduce dependence on a single software vendor.',
+      'Useful legal AI should support professional judgment, not obscure or replace it. We focus on bounded tasks with inspectable inputs and outputs that remain subject to attorney review.',
+      'Enclave Compute helps solo practitioners and small firms identify a suitable first workflow, choose and configure the tools, test the result against clear criteria, and train the people who will use it.',
     ],
   },
   {
-    title: 'Build around attorney review',
+    title: 'Build around confidentiality and review',
     paragraphs: [
-      'Useful legal AI should accelerate professional judgment, not replace it. We focus on bounded tasks with inspectable source material and outputs that remain subject to attorney review, such as document summarization, clause extraction, and first-draft communications.',
-      'A fixed-fee AI Readiness Assessment identifies a suitable first use case, documents the workflow and its data requirements, and demonstrates the approach on your own materials before deployment.',
+      'The workflow design documents what client information may be used, which users and systems can access it, and where human approval is required before an output moves forward.',
+      'Controls may include configured business AI accounts, restricted access, redaction, auditability, or private infrastructure when the matter and operating requirements warrant it. Architecture follows the workflow risk—not the other way around.',
     ],
   },
 ];
 ---
 
 <Landing
-  title="Private AI for Law Firms in Raleigh, NC | Enclave Compute"
-  description="Private, on-premise AI for solo attorneys and small law firms in Raleigh and the Research Triangle. Summarize, search, and draft while keeping client files local."
+  title="Practical AI for Law Firms in Raleigh, NC | Enclave Compute"
+  description="AI workflow consulting for solo attorneys and small law firms in Raleigh and the Research Triangle. Improve document review, knowledge search, and routine drafting."
   path="/industries/legal-ai/"
-  badge="Local AI for solo attorneys and small firms"
-  heading="Private AI for law firms"
-  intro="Use AI to summarize, search, and prepare first drafts while keeping selected client-file workflows on hardware inside your firm."
-  serviceType="Private AI consulting for law firms"
+  badge="Practical AI for solo attorneys and small firms"
+  heading="Put AI to work around legal judgment"
+  intro="Make document-heavy work faster with bounded, reviewable workflows designed to keep attorneys accountable for the result."
+  serviceType="AI workflow consulting for law firms"
   audience="Solo attorneys and small law firms"
   cards={cards}
   sections={sections}
   relatedLinks={[
-    { href: '/services/on-premise-ai/', label: 'On-premise AI deployment' },
-    { href: '/industries/healthcare-ai/', label: 'Private AI for healthcare' },
+    { href: '/industries/healthcare-ai/', label: 'AI for healthcare practices' },
     { href: '/industries/professional-services-ai/', label: 'AI for professional services' },
+    { href: '/services/on-premise-ai/', label: 'Private deployment when a workflow requires it' },
   ]}
 />

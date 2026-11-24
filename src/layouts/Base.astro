@@ -8,7 +8,7 @@ interface Props {
 
 const {
   title,
-  description = 'Practical AI workflow consulting, automation, training, and private deployment for small businesses in the Research Triangle, NC.',
+  description = 'Practical AI consulting, workflow automation, and team training for small businesses in the Research Triangle, NC.',
   noindex = false,
   structuredData,
 } = Astro.props;
@@ -29,7 +29,7 @@ const defaultStructuredData = {
       image: new URL('/logo.png', Astro.site).href,
       email: 'info@enclavecompute.net',
       description:
-        'Practical AI workflow consulting, automation, training, and private deployment for small businesses in the Research Triangle, NC.',
+        'Practical AI consulting, workflow automation, and team training for small businesses in the Research Triangle, NC.',
       contactPoint: {
         '@type': 'ContactPoint',
         email: 'info@enclavecompute.net',
@@ -109,7 +109,7 @@ const pageStructuredData = structuredData
         <ul class="nav-links" id="nav-links">
           <li><a href="/#what-we-do">What We Do</a></li>
           <li><a href="/#how-it-works">How It Works</a></li>
-          <li><a href="/#workflows">How We Choose</a></li>
+          <li><a href="/#workflows">Use Cases</a></li>
           <li><a href="/#verticals">Verticals</a></li>
           <li><a href="/#about">About</a></li>
           <li><a href="/#contact" class="btn btn-primary" style="padding: 0.5rem 1.2rem; font-size: 0.85rem;">Email Us</a></li>

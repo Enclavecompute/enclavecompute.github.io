@@ -1,41 +1,41 @@
 # Enclave Compute
 
-> Practical AI workflow consulting for Triangle small businesses, with cloud, automation, and private deployment options matched to the work.
+> Practical AI consulting, workflow automation, and team training for small businesses in the Research Triangle.
 
 ## About
 
-Enclave Compute is a Garner-based AI enablement consultancy serving the Research Triangle. We help small businesses choose, build, and adopt one useful AI workflow at a time. We are vendor-pragmatic: managed cloud tools for ordinary work, connected automation for repeatable processes, and private execution when sensitive data or offline operation requires it.
+Enclave Compute is a Garner-based AI enablement consultancy serving the Research Triangle. We help small businesses identify useful AI opportunities, implement one bounded workflow at a time, and train staff to operate and improve it.
 
-We run a fixed-fee AI Readiness Assessment that maps a workflow, its data boundaries, human review points, success measure, and recommended deployment path. A bounded first workflow can often be targeted for launch within two weeks after requirements, access, and approvals are ready.
+We begin with a fixed-fee AI Readiness Assessment that maps the current process, identifies a measurable opportunity, documents data and human-review boundaries, and recommends the simplest suitable approach. A bounded first workflow can often be targeted for launch within two weeks after requirements, access, and approvals are ready.
 
 ## Key facts
 
-- Backed by product and engineering experience spanning payments, enterprise security, confidential computing, healthcare data platforms, cloud systems, and applied AI
+- Backed by product and engineering experience spanning payments, enterprise security, healthcare data platforms, cloud systems, workflow automation, and applied AI
 - Service area: Raleigh, Durham, Chapel Hill, Cary, Garner, and the wider Research Triangle, NC
-- Deployment options: ChatGPT Business and other managed tools, connected workflow automation, or an on-premise appliance with open-source models
-- Selected private workflows can continue through an internet outage
-- PII Guard can redact configured identifier types before approved external calls; it reduces exposure but is not a compliance guarantee
-- Current proof-of-work is a tested prototype kit using synthetic inputs, not a claim of completed client deployments
+- Works with managed business AI, workflow automation, integrations, and fit-dependent infrastructure
+- Designs workflows around approved inputs, visible human checkpoints, measurable outcomes, and staff adoption
+- Recommends private infrastructure only when the workflow's sensitivity or operating requirements justify it
+- Current technical proof-of-work uses controlled prototypes and synthetic inputs, not claims of completed client deployments
 
 ## Who we work with
 
 - Healthcare: dental, orthodontic, and medical practices
 - Legal: solo practitioners and small firms
-- Professional services: accounting, consulting, financial advisory
+- Professional services: accounting, consulting, and advisory teams
 
 ## Core services
 
-- Workflow Discovery & Training — select a measurable first use case and teach staff to own it
-- Cloud AI Adoption — configure managed business AI for ordinary work
-- Automation & Integrations — connect approved inputs and systems with human review
-- Private AI Deployment — local execution for selected sensitive or offline workflows
+- Opportunity Mapping — identify a measurable first use case
+- Workflow Implementation — configure the tools and operating process
+- Automation & Integrations — connect approved information and business systems with human review
+- Team Training & Adoption — teach staff to operate, evaluate, and improve the workflow
 
-## Detailed service pages
+## Service pages
 
-- On-premise AI deployment: https://www.enclavecompute.net/services/on-premise-ai/
-- Private AI for healthcare practices: https://www.enclavecompute.net/industries/healthcare-ai/
-- Private AI for law firms: https://www.enclavecompute.net/industries/legal-ai/
-- Private AI for professional services: https://www.enclavecompute.net/industries/professional-services-ai/
+- AI for healthcare practices: https://www.enclavecompute.net/industries/healthcare-ai/
+- AI for law firms: https://www.enclavecompute.net/industries/legal-ai/
+- AI for professional services: https://www.enclavecompute.net/industries/professional-services-ai/
+- Private deployment when a workflow requires it: https://www.enclavecompute.net/services/on-premise-ai/
 
 ## Contact
 

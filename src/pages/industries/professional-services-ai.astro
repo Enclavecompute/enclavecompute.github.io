@@ -4,50 +4,50 @@ import Landing from '../../layouts/Landing.astro';
 const cards = [
   {
     title: 'Produce client-ready first drafts',
-    text: 'Turn approved source material into first drafts of reports, summaries, and recurring client communications for expert review.',
+    text: 'Turn approved source material into first drafts of reports, summaries, proposals, and recurring client communications for expert review.',
   },
   {
-    title: 'Search internal expertise',
-    text: 'Make policies, prior work, and reference documents easier to navigate through a private internal knowledge assistant.',
+    title: 'Make internal expertise searchable',
+    text: 'Help staff navigate approved policies, prior work, templates, and reference documents without hunting through folders.',
   },
   {
-    title: 'Reduce repetitive process work',
-    text: 'Connect AI to approved document stores and business systems to streamline repeatable, reviewable steps.',
+    title: 'Automate repetitive process work',
+    text: 'Extract information, prepare follow-ups, and connect reviewable outputs to the business systems your team already uses.',
   },
 ];
 
 const sections = [
   {
-    title: 'Useful AI without making every file cloud-ready',
+    title: 'Apply AI where it improves the client workflow',
     paragraphs: [
-      'Accounting, consulting, and financial advisory teams work with client material that may not belong in a general-purpose cloud AI tool. A local system creates another option: run selected AI workflows on hardware the business owns and controls.',
-      'Enclave Compute helps teams choose tools based on the sensitivity and value of each workflow. Local AI is the specialty, but a practical roadmap may combine on-premise models, carefully configured cloud tools, and integrations with the systems already in use.',
+      'Accounting, consulting, and advisory teams often repeat the same information-heavy steps across clients. A bounded AI workflow can reduce that effort while leaving experts responsible for interpretation and the final work product.',
+      'Enclave Compute helps teams identify the best first opportunity, configure the tools, connect approved information sources, and define a measurable result before expanding further.',
     ],
   },
   {
-    title: 'Adoption is part of the deployment',
+    title: 'Adoption is part of the implementation',
     paragraphs: [
-      'A technically capable model is not enough if staff do not trust it or know when to use it. Each deployment includes role-aware access configuration, hands-on staff training, and go-live support so the first use case becomes a repeatable part of the workday.',
-      'The AI Readiness Assessment provides a low-risk starting point: a workflow audit, written plan, and demonstration on your own data before a broader investment.',
+      'A capable tool creates little value if staff do not trust it or know when to use it. Each project includes hands-on training, clear review boundaries, and a documented operating process.',
+      'We select managed AI, automation, access controls, or private infrastructure according to the workflow’s value, sensitivity, and operating requirements. The recommendation is driven by fit—not by a preferred vendor or deployment model.',
     ],
   },
 ];
 ---
 
 <Landing
-  title="Private AI for Professional Services in Raleigh, NC | Enclave Compute"
-  description="Private AI consulting for accounting, consulting, and financial advisory teams in Raleigh and the Research Triangle. Deploy useful AI on hardware you own."
+  title="Practical AI for Professional Services in Raleigh, NC | Enclave Compute"
+  description="AI workflow consulting for accounting, consulting, and advisory teams in Raleigh and the Research Triangle. Improve drafting, knowledge access, and process automation."
   path="/industries/professional-services-ai/"
-  badge="Local AI for accounting, consulting, and advisory teams"
-  heading="Private AI for professional services"
-  intro="Adopt AI for reports, knowledge search, and process automation while keeping selected client-data workflows under your control."
-  serviceType="Private AI consulting for professional services"
+  badge="Practical AI for accounting, consulting, and advisory teams"
+  heading="Turn repeatable client work into reliable AI workflows"
+  intro="Use AI to prepare first drafts, surface internal expertise, and move routine work forward while your team retains expert review."
+  serviceType="AI workflow consulting for professional services"
   audience="Accounting, consulting, and financial advisory teams"
   cards={cards}
   sections={sections}
   relatedLinks={[
-    { href: '/services/on-premise-ai/', label: 'On-premise AI deployment' },
-    { href: '/industries/healthcare-ai/', label: 'Private AI for healthcare' },
-    { href: '/industries/legal-ai/', label: 'Private AI for law firms' },
+    { href: '/industries/healthcare-ai/', label: 'AI for healthcare practices' },
+    { href: '/industries/legal-ai/', label: 'AI for law firms' },
+    { href: '/services/on-premise-ai/', label: 'Private deployment when a workflow requires it' },
   ]}
 />

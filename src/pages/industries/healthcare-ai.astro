@@ -3,51 +3,51 @@ import Landing from '../../layouts/Landing.astro';
 
 const cards = [
   {
-    title: 'Draft clinical documentation',
-    text: 'Turn dictated notes into structured drafts for staff review while keeping the source material on the practice network.',
+    title: 'Reduce documentation burden',
+    text: 'Turn dictated or structured source material into first drafts that staff can review, correct, and approve.',
   },
   {
-    title: 'Find answers in internal knowledge',
-    text: 'Help staff search approved policies, procedures, and reference documents without uploading the whole library to a public AI tool.',
+    title: 'Make practice knowledge easier to find',
+    text: 'Help staff search approved policies, procedures, and reference documents without digging through folders.',
   },
   {
-    title: 'Prepare routine communications',
-    text: 'Create first drafts of referral letters, pre-authorization materials, review responses, and other repeatable communications.',
+    title: 'Streamline routine communication',
+    text: 'Prepare reviewable drafts for patient messages, referral materials, review responses, and other repeatable work.',
   },
 ];
 
 const sections = [
   {
-    title: 'AI designed around healthcare data boundaries',
+    title: 'Start with an everyday operational burden',
     paragraphs: [
-      'Healthcare practices often see clear opportunities for AI but cannot treat patient information like ordinary business content. A local AI appliance keeps selected workflows inside the practice network and gives the team control over which systems and users can access them.',
-      'Enclave Compute works with dental, orthodontic, and medical practices to identify useful first projects, test them against real workflows, and train staff on safe day-to-day use. The aim is not to add another disconnected tool; it is to reduce repetitive work without weakening the practice’s data-handling standards.',
+      'Healthcare practices do not need a sweeping AI transformation to see value. A good first project removes friction from one repetitive task while preserving staff and clinician accountability.',
+      'Enclave Compute helps dental, orthodontic, and medical practices map the current workflow, select an appropriate tool, test the output, and train staff on when and how to use it.',
     ],
   },
   {
-    title: 'Start with a bounded workflow',
+    title: 'Match the safeguards to the workflow',
     paragraphs: [
-      'A good first healthcare AI project has a clear input, a reviewable output, and a measurable burden today. Examples include drafting notes from voice, summarizing information for a morning huddle, or searching an approved staff knowledge base.',
-      'The AI Readiness Assessment helps the practice choose that first workflow, document operational and privacy requirements, and see a live demonstration before committing to a full deployment.',
+      'Patient and practice information requires clear boundaries. We document what data may be used, who can access the workflow, what must be reviewed, and which systems may receive the result.',
+      'Depending on the use case, the implementation may use a configured business AI service, workflow automation, redaction and access controls, or private infrastructure. The goal is not one preferred architecture; it is a useful workflow with controls proportionate to the risk.',
     ],
   },
 ];
 ---
 
 <Landing
-  title="Private AI for Healthcare Practices in Raleigh, NC | Enclave Compute"
-  description="Local AI consulting for dental, orthodontic, and medical practices in Raleigh and the Research Triangle. Keep sensitive workflows on your practice network."
+  title="Practical AI for Healthcare Practices in Raleigh, NC | Enclave Compute"
+  description="AI workflow consulting for dental, orthodontic, and medical practices in Raleigh and the Research Triangle. Improve documentation, knowledge access, and routine operations."
   path="/industries/healthcare-ai/"
-  badge="Local AI for dental, orthodontic, and medical practices"
-  heading="Private AI for healthcare practices"
-  intro="Use AI for documentation, knowledge search, and routine communications while keeping selected patient-data workflows on your own network."
-  serviceType="Private AI consulting for healthcare practices"
+  badge="Practical AI for dental, orthodontic, and medical practices"
+  heading="Make everyday practice work easier with AI"
+  intro="Reduce repetitive documentation, communication, and administrative work with bounded workflows your staff can review and operate."
+  serviceType="AI workflow consulting for healthcare practices"
   audience="Dental, orthodontic, and medical practices"
   cards={cards}
   sections={sections}
   relatedLinks={[
-    { href: '/services/on-premise-ai/', label: 'On-premise AI deployment' },
-    { href: '/industries/legal-ai/', label: 'Private AI for law firms' },
+    { href: '/industries/legal-ai/', label: 'AI for law firms' },
     { href: '/industries/professional-services-ai/', label: 'AI for professional services' },
+    { href: '/services/on-premise-ai/', label: 'Private deployment when a workflow requires it' },
   ]}
 />
